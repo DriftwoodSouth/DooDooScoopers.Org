@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DooDoo Scoopers - We handle the mess!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-ieoOQ+F2XwW06l0/gT+F8fG5Kx7zX3h3/G+F7r+R5F6Z2p9Z9+G9V1V1+Y8gH2q+H3V3X2P2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .text-yellow-custom { color: #facc15; }
+        .bg-yellow-custom { background-color: #facc15; }
+        .text-green-custom { color: #22c55e; }
+        .bg-green-custom { background-color: #22c55e; }
+        .text-blue-custom { color: #3b82f6; }
+        .bg-blue-custom { background-color: #3b82f6; }
+        .shadow-custom { box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.1), 0 4px 6px -2px rgba(34, 197, 94, 0.05); }
+        .btn-hover-shadow:hover {
+            box-shadow: 0 15px 25px -5px rgba(34, 197, 94, 0.2), 0 10px 10px -5px rgba(34, 197, 94, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-blue-100 text-gray-800">
+
+    <!-- How It Works Section -->
+    <section class="container mx-auto px-4 py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold text-center mb-6">Simple Process</h3>
+        <div class="flex flex-col gap-4 text-center">
+            <!-- Step 1: Pre-Arrival Text (Quote Bubble Icon) -->
+            <div class="p-4 bg-white rounded-xl shadow-lg border border-green-200 flex flex-col md:flex-row items-center justify-start text-left w-full space-y-4 md:space-y-0 md:space-x-6">
+                <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-green-custom text-white rounded-full">
+                    <i class="fa-solid fa-comment-dots text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 md:mb-0">Step 1: Pre-Arrival Text</h4>
+                    <p class="text-gray-600">We text an hour before arrival so you can secure your pets and unlock your side/back gate.</p>
+                </div>
+            </div>
+            <!-- Step 2: On-Site Text (House with Checkmark Icon) -->
+            <div class="p-4 bg-white rounded-xl shadow-lg border border-green-200 flex flex-col md:flex-row items-center justify-start text-left w-full space-y-4 md:space-y-0 md:space-x-6">
+                <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-green-custom text-white rounded-full">
+                    <i class="fa-solid fa-house-circle-check text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 md:mb-0">Step 2: On-Site Text</h4>
+                    <p class="text-gray-600">We text again on arrival, so you know we're beginning our service.</p>
+                </div>
+            </div>
+            <!-- Step 3: Gate Secured (Gate Icon) -->
+            <div class="p-4 bg-white rounded-xl shadow-lg border border-green-200 flex flex-col md:flex-row items-center justify-start text-left w-full space-y-4 md:space-y-0 md:space-x-6">
+                <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-green-custom text-white rounded-full">
+                    <i class="fa-solid fa-door-closed text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 md:mb-0">Step 3: Gate Secured</h4>
+                    <p class="text-gray-600">We'll send a picture of your gate closed once the job is complete, providing peace of mind.</p>
+                </div>
+            </div>
+            <!-- Step 4: Haul Away & Sanitize (Bubbles Icon) -->
+            <div class="p-4 bg-white rounded-xl shadow-lg border border-green-200 flex flex-col md:flex-row items-center justify-start text-left w-full space-y-4 md:space-y-0 md:space-x-6">
+                <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-green-custom text-white rounded-full">
+                    <i class="fa-solid fa-soap text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-2 md:mb-0">Step 4: Haul Away & Sanitize</h4>
+                    <p class="text-gray-600">We haul the waste and sanitize our equipment, every time, for a truly clean experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="container mx-auto px-4 py-8 md:py-12 bg-green-100 rounded-2xl">
+        <h3 class="text-3xl md:text-4xl font-bold text-center mb-6">Simple Pricing</h3>
+        <div class="flex flex-col md:flex-row justify-center items-center md:space-x-6 space-y-6 md:space-y-0">
+            <!-- Plan 1 -->
+            <div class="w-full md:w-96 p-8 bg-white rounded-2xl shadow-lg text-center border-4 border-green-custom transform transition-transform hover:scale-105">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-thumbs-up text-3xl text-yellow-custom" style="filter: drop-shadow(1px 1px 0px black) drop-shadow(-1px -1px 0px black) drop-shadow(1px -1px 0px black) drop-shadow(-1px 1px 0px black);"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-2">Weekly Scooping</h4>
+                <p class="text-5xl font-extrabold text-gray-900">$15</p>
+                <p class="text-xl text-gray-600 mb-6">per week</p>
+                <ul class="list-none text-left space-y-2 mb-8">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        One visit per week
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        Thorough yard cleaning
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        Waste disposal
+                    </li>
+                </ul>
+            </div>
+            <!-- Plan 2 -->
+            <div class="w-full md:w-96 p-8 bg-white rounded-2xl shadow-lg text-center border-4 border-green-custom transform transition-transform hover:scale-105">
+                <div class="flex items-center justify-center mb-4 space-x-2">
+                    <i class="fa-solid fa-thumbs-up text-3xl text-yellow-custom" style="filter: drop-shadow(1px 1px 0px black) drop-shadow(-1px -1px 0px black) drop-shadow(1px -1px 0px black) drop-shadow(-1px 1px 0px black);"></i>
+                    <i class="fa-solid fa-thumbs-up text-3xl text-yellow-custom transform scale-x-[-1]" style="filter: drop-shadow(1px 1px 0px black) drop-shadow(-1px -1px 0px black) drop-shadow(1px -1px 0px black) drop-shadow(-1px 1px 0px black);"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-2">Bi-weekly Scooping</h4>
+                <p class="text-5xl font-extrabold text-gray-900">$25</p>
+                <p class="text-xl text-gray-600 mb-6">per week</p>
+                <ul class="list-none text-left space-y-2 mb-8">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        Two visits per week
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        More frequent cleaning
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        Perfect for multiple dogs
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="container mx-auto px-4 py-8 md:py-12">
+        <h3 class="text-3xl md:text-4xl font-bold text-center mb-6">Ready to Get Started?</h3>
+        <p class="text-center text-lg text-gray-600 mb-6">Fill out the form below and we'll be in touch to schedule your first cleanup!</p>
+        <div class="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-lg border border-green-200">
+            <form id="contactForm">
+                <div class="mb-4">
+                    <label for="firstName" class="block text-gray-700 text-sm font-bold mb-2">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-green-custom transition-colors duration-300">
+                </div>
+                <div class="mb-4">
+                    <label for="address" class="block text-gray-700 text-sm font-bold mb-2">Address</label>
+                    <input type="text" id="address" name="address" required class="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-green-custom transition-colors duration-300">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-green-custom transition-colors duration-300">
+                </div>
+                <div class="mb-4">
+                    <label for="frequency" class="block text-gray-700 text-sm font-bold mb-2">How many times per week?</label>
+                    <select id="frequency" name="frequency" required class="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-green-custom transition-colors duration-300">
+                        <option value="">-- Please choose an option --</option>
+                        <option value="once">Once a week ($15)</option>
+                        <option value="twice">Twice a week ($25)</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-green-custom text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 btn-hover-shadow">
+                        Submit Request
+                    </button>
+                </div>
+            </form>
+            <div id="successMessage" class="hidden mt-6 text-center text-green-custom font-bold">
+                Thank you for your request! We will be in touch shortly.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-custom text-white py-4 text-center rounded-t-3xl mt-8">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 DooDoo Scoopers. All rights reserved.</p>
+            <p class="mt-1 text-sm text-blue-200">Serving Eastern North Carolina.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // In a real application, you would send this data to a server
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+
+            console.log('Form data submitted:', data);
+
+            // Display a success message and hide the form
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
