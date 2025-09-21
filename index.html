@@ -39,7 +39,7 @@
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-2 md:mb-0">Step 1: Pre-Arrival Text</h4>
-                    <p class="text-gray-600">We text an hour before arrival so you can secure your pets and unlock your side/back gate.</p>
+                    <p class="text-gray-600">We'll text an hour before service so you can secure your pets and unlock the gate to your yard.</p>
                 </div>
             </div>
             <!-- Step 2: On-Site Text (House with Checkmark Icon) -->
@@ -49,7 +49,7 @@
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-2 md:mb-0">Step 2: On-Site Text</h4>
-                    <p class="text-gray-600">We text again on arrival, so you know we're beginning our service.</p>
+                    <p class="text-gray-600">We'll text again when we arrive so you know service is beginning.</p>
                 </div>
             </div>
             <!-- Step 3: Gate Secured (Gate Icon) -->
@@ -59,7 +59,7 @@
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-2 md:mb-0">Step 3: Gate Secured</h4>
-                    <p class="text-gray-600">We'll send a picture of your gate closed once the job is complete, providing peace of mind.</p>
+                    <p class="text-gray-600">Once service is complete, we'll send proof your gate is closed providing peace of mind.</p>
                 </div>
             </div>
             <!-- Step 4: Haul Away & Sanitize (Bubbles Icon) -->
@@ -69,7 +69,7 @@
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-2 md:mb-0">Step 4: Haul Away & Sanitize</h4>
-                    <p class="text-gray-600">We haul the waste and sanitize our equipment, every time, for a truly clean experience.</p>
+                    <p class="text-gray-600">We haul the waste and sanitize our equipment, every time, to ensure your home is clean.</p>
                 </div>
             </div>
         </div>
@@ -128,12 +128,6 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
-                        More frequent cleaning
-                    </li>
-                    <li class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-custom mr-2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
                         Perfect for multiple dogs
                     </li>
                 </ul>
@@ -146,7 +140,7 @@
         <h3 class="text-3xl md:text-4xl font-bold text-center mb-6">Ready to Get Started?</h3>
         <p class="text-center text-lg text-gray-600 mb-6">Fill out the form below and we'll be in touch to schedule your first cleanup!</p>
         <div class="max-w-xl mx-auto p-6 bg-white rounded-2xl shadow-lg border border-green-200">
-            <form action="https://formspree.io/f/xwpreeja" method="POST">
+            <form id="contactForm" action="https://formspree.io/f/xwpreeja" method="POST">
                 <div class="mb-4">
                     <label for="firstName" class="block text-gray-700 text-sm font-bold mb-2">First Name</label>
                     <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-2 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-green-custom transition-colors duration-300">
@@ -186,6 +180,38 @@
             <p class="mt-1 text-sm text-blue-200">Serving Eastern North Carolina.</p>
         </div>
     </footer>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            try {
+                const response = await fetch(event.target.action, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                });
+
+                if (response.ok) {
+                    form.reset();
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                } else {
+                    console.error('Formspree submission failed:', response);
+                    // Handle error, e.g., show an error message
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                // Handle network or other errors
+            }
+        });
+    </script>
 
 </body>
 </html>
